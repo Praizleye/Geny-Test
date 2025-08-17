@@ -6,38 +6,6 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "17751176298836034051"
-      },
-      {
-        "file": "drizzle.config.ts",
-        "hash": "7828847257059144247"
-      },
-      {
-        "file": "README.md",
-        "hash": "11800164281837776583"
-      },
-      {
-        "file": "jest.config.js",
-        "hash": "11568839709720087796"
-      },
-      {
-        "file": "docker-compose.yml",
-        "hash": "11015929302128238508"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "10028590073176968744"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "2811845925925127796"
-      },
-      {
-        "file": "package.json",
-        "hash": "5533853033238489328"
-      },
-      {
         "file": ".gitignore",
         "hash": "3102350400356622808"
       },
@@ -46,11 +14,89 @@
         "hash": "14957344469935029303"
       },
       {
+        "file": "README.md",
+        "hash": "11800164281837776583"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "9650483755550266861"
+      },
+      {
+        "file": "drizzle.config.ts",
+        "hash": "7828847257059144247"
+      },
+      {
+        "file": "jest.config.js",
+        "hash": "11568839709720087796"
+      },
+      {
         "file": "nx.json",
         "hash": "4672912533429441251"
+      },
+      {
+        "file": "package.json",
+        "hash": "3354986558029339700"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "13586430318161188808"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2811845925925127796"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "10028590073176968744"
       }
     ],
     "projectFileMap": {
+      "booking-worker": [
+        {
+          "file": "apps/booking-worker/README.md",
+          "hash": "11464879197664956745"
+        },
+        {
+          "file": "apps/booking-worker/dist/src/config.js",
+          "hash": "40863622579083179"
+        },
+        {
+          "file": "apps/booking-worker/dist/src/config.js.map",
+          "hash": "15886151823683951835"
+        },
+        {
+          "file": "apps/booking-worker/dist/src/worker.js",
+          "hash": "6291145294483911119"
+        },
+        {
+          "file": "apps/booking-worker/dist/src/worker.js.map",
+          "hash": "2785368998562052145"
+        },
+        {
+          "file": "apps/booking-worker/package.json",
+          "hash": "13842112217211425918"
+        },
+        {
+          "file": "apps/booking-worker/project.json",
+          "hash": "1939238145207996830"
+        },
+        {
+          "file": "apps/booking-worker/src/config.ts",
+          "hash": "135643471310915048"
+        },
+        {
+          "file": "apps/booking-worker/src/worker.ts",
+          "hash": "701529655867103732"
+        },
+        {
+          "file": "apps/booking-worker/tsconfig.build.json",
+          "hash": "4435453427051663338"
+        },
+        {
+          "file": "apps/booking-worker/tsconfig.json",
+          "hash": "15389935362767717706"
+        }
+      ],
       "booking-service": [
         {
           "file": "apps/booking-service/README.md",
@@ -225,8 +271,16 @@
           "hash": "13212557763745835196"
         },
         {
-          "file": "apps/booking-service/migrations/0001_init.sql",
-          "hash": "16805898438218141204"
+          "file": "apps/booking-service/migrations/0000_daffy_mattie_franklin.sql",
+          "hash": "848143593615882538"
+        },
+        {
+          "file": "apps/booking-service/migrations/meta/0000_snapshot.json",
+          "hash": "7671009940243873360"
+        },
+        {
+          "file": "apps/booking-service/migrations/meta/_journal.json",
+          "hash": "6864949567057537002"
         },
         {
           "file": "apps/booking-service/package.json",
@@ -331,52 +385,6 @@
         {
           "file": "apps/booking-service/tsconfig.json",
           "hash": "3584111246389606518"
-        }
-      ],
-      "booking-worker": [
-        {
-          "file": "apps/booking-worker/README.md",
-          "hash": "11464879197664956745"
-        },
-        {
-          "file": "apps/booking-worker/dist/src/config.js",
-          "hash": "40863622579083179"
-        },
-        {
-          "file": "apps/booking-worker/dist/src/config.js.map",
-          "hash": "15886151823683951835"
-        },
-        {
-          "file": "apps/booking-worker/dist/src/worker.js",
-          "hash": "6291145294483911119"
-        },
-        {
-          "file": "apps/booking-worker/dist/src/worker.js.map",
-          "hash": "2785368998562052145"
-        },
-        {
-          "file": "apps/booking-worker/package.json",
-          "hash": "13842112217211425918"
-        },
-        {
-          "file": "apps/booking-worker/project.json",
-          "hash": "1939238145207996830"
-        },
-        {
-          "file": "apps/booking-worker/src/config.ts",
-          "hash": "135643471310915048"
-        },
-        {
-          "file": "apps/booking-worker/src/worker.ts",
-          "hash": "701529655867103732"
-        },
-        {
-          "file": "apps/booking-worker/tsconfig.build.json",
-          "hash": "4435453427051663338"
-        },
-        {
-          "file": "apps/booking-worker/tsconfig.json",
-          "hash": "15389935362767717706"
         }
       ]
     }

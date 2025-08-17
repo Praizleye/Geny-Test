@@ -1,0 +1,28 @@
+[2m> [22mpnpm -C apps/booking-worker dev
+
+
+> booking-worker@0.1.0 dev /Users/praiseleye/Documents/Geny-Test/apps/booking-worker
+> ts-node-dev --respawn --transpile-only src/worker.ts
+
+[[36mINFO[0m] [30;1m09:32:52[0m ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.9.2)
+Error: BullMQ: Your redis options maxRetriesPerRequest must be null.
+    at RedisConnection.checkBlockingOptions (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/bullmq@5.58.0/node_modules/bullmq/src/classes/redis-connection.ts:143:15)
+    at new RedisConnection (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/bullmq@5.58.0/node_modules/bullmq/src/classes/redis-connection.ts:113:12)
+    at new Worker (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/bullmq@5.58.0/node_modules/bullmq/src/classes/worker.ts:317:31)
+    at Object.<anonymous> (/Users/praiseleye/Documents/Geny-Test/apps/booking-worker/src/worker.ts:8:16)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1554:14)
+    at Module._compile (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/source-map-support@0.5.21/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/private/var/folders/p9/qhjgq6tx5x57htl6l23pm9jc0000gn/T/ts-node-dev-hook-15164649459883894.js:69:33)
+    at node:internal/modules/cjs/loader:1706:10
+    at require.extensions..jsx.require.extensions..js (/private/var/folders/p9/qhjgq6tx5x57htl6l23pm9jc0000gn/T/ts-node-dev-hook-15164649459883894.js:114:20)
+    at require.extensions.<computed> (/private/var/folders/p9/qhjgq6tx5x57htl6l23pm9jc0000gn/T/ts-node-dev-hook-15164649459883894.js:71:20)
+[[31;1mERROR[0m] [30;1m09:32:53[0m Error: BullMQ: Your redis options maxRetriesPerRequest must be null.
+[[36mINFO[0m] [30;1m09:34:21[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-worker/src/worker.ts has been modified
+booking-worker ready
+[[36mINFO[0m] [30;1m09:34:26[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-worker/src/worker.ts has been modified
+booking-worker ready
+[[36mINFO[0m] [30;1m09:36:10[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-worker/src/worker.ts has been modified
+booking-worker ready
+[[36mINFO[0m] [30;1m09:37:27[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-worker/src/worker.ts has been modified
+booking-worker ready
+^C

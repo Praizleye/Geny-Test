@@ -2818,9 +2818,9 @@
       "type": "npm",
       "name": "npm:drizzle-orm",
       "data": {
-        "version": "0.33.0",
+        "version": "0.44.4",
         "packageName": "drizzle-orm",
-        "hash": "sha512-SHy72R2Rdkz0LEq0PSG/IdvnT3nGiWuRk+2tXZQ90GVq/XQhpCzu/EFT3V2rox+w8MlkBQxifF8pCStNYnERfA=="
+        "hash": "sha512-ZyzKFpTC/Ut3fIqc2c0dPZ6nhchQXriTsqTNs4ayRgl6sZcFlMs9QZKPSHXK4bdOf41GHGWf+FrpcDDYwW+W6Q=="
       }
     },
     "npm:dunder-proto": {
@@ -12588,5 +12588,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1755449061744
+  "computedAt": 1755451752501
 }
