@@ -6,6 +6,38 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "LICENSE",
+        "hash": "14957344469935029303"
+      },
+      {
+        "file": "package.json",
+        "hash": "5533853033238489328"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "11015929302128238508"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "10028590073176968744"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "17751176298836034051"
+      },
+      {
+        "file": "drizzle.config.ts",
+        "hash": "6430357728190372608"
+      },
+      {
+        "file": "README.md",
+        "hash": "11800164281837776583"
+      },
+      {
+        "file": "nx.json",
+        "hash": "4672912533429441251"
+      },
+      {
         "file": "pnpm-workspace.yaml",
         "hash": "2811845925925127796"
       },
@@ -14,40 +46,16 @@
         "hash": "11568839709720087796"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "17751176298836034051"
-      },
-      {
-        "file": "LICENSE",
-        "hash": "14957344469935029303"
-      },
-      {
-        "file": "drizzle.config.ts",
-        "hash": "6430357728190372608"
-      },
-      {
-        "file": "nx.json",
-        "hash": "4672912533429441251"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "10028590073176968744"
-      },
-      {
         "file": ".gitignore",
         "hash": "3102350400356622808"
-      },
-      {
-        "file": "package.json",
-        "hash": "5533853033238489328"
-      },
-      {
-        "file": "README.md",
-        "hash": "16478322637662302619"
       }
     ],
     "projectFileMap": {
       "booking-service": [
+        {
+          "file": "apps/booking-service/README.md",
+          "hash": "3862636437058549918"
+        },
         {
           "file": "apps/booking-service/dist/src/app.module.js",
           "hash": "13664835250758737682"
@@ -298,7 +306,7 @@
         },
         {
           "file": "apps/booking-service/src/main.ts",
-          "hash": "7938526643354554153"
+          "hash": "17427627762454899072"
         },
         {
           "file": "apps/booking-service/src/metrics/register.ts",
@@ -326,6 +334,10 @@
         }
       ],
       "booking-worker": [
+        {
+          "file": "apps/booking-worker/README.md",
+          "hash": "11464879197664956745"
+        },
         {
           "file": "apps/booking-worker/dist/src/config.js",
           "hash": "40863622579083179"
