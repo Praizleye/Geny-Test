@@ -5,8 +5,8 @@ dotenv.config({ path: '.env' });
 export default {
   schema: './apps/booking-service/src/db/schema.ts',
   out: './apps/booking-service/migrations',
-  driver: 'pg',
+  dialect: 'postgresql',
   dbCredentials: {
-    connectionString: process.env.DATABASE_URL || 'postgres://postgres:postgres@localhost:5432/bookings',
+    url: process.env.DATABASE_URL || 'postgres://postgres:postgres@localhost:5432/bookings',
   },
 } satisfies Config;

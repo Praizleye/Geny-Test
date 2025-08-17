@@ -7,7 +7,7 @@ export type ReminderJob = {
   startTime: Date;
 };
 
-const connection = new IORedis(config.redisUrl);
+const connection = new IORedis(config.redisUrl, { maxRetriesPerRequest: null, enableReadyCheck: false });
 export const remindersQueue = new Queue<ReminderJob>('booking-reminders', {
   connection,
 });

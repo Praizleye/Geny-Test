@@ -6,12 +6,20 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "LICENSE",
-        "hash": "14957344469935029303"
+        "file": "pnpm-lock.yaml",
+        "hash": "17751176298836034051"
       },
       {
-        "file": "package.json",
-        "hash": "5533853033238489328"
+        "file": "drizzle.config.ts",
+        "hash": "7828847257059144247"
+      },
+      {
+        "file": "README.md",
+        "hash": "11800164281837776583"
+      },
+      {
+        "file": "jest.config.js",
+        "hash": "11568839709720087796"
       },
       {
         "file": "docker-compose.yml",
@@ -22,32 +30,24 @@
         "hash": "10028590073176968744"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "17751176298836034051"
-      },
-      {
-        "file": "drizzle.config.ts",
-        "hash": "6430357728190372608"
-      },
-      {
-        "file": "README.md",
-        "hash": "11800164281837776583"
-      },
-      {
-        "file": "nx.json",
-        "hash": "4672912533429441251"
-      },
-      {
         "file": "pnpm-workspace.yaml",
         "hash": "2811845925925127796"
       },
       {
-        "file": "jest.config.js",
-        "hash": "11568839709720087796"
+        "file": "package.json",
+        "hash": "5533853033238489328"
       },
       {
         "file": ".gitignore",
         "hash": "3102350400356622808"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "14957344469935029303"
+      },
+      {
+        "file": "nx.json",
+        "hash": "4672912533429441251"
       }
     ],
     "projectFileMap": {
@@ -314,7 +314,7 @@
         },
         {
           "file": "apps/booking-service/src/queue/job-queue.ts",
-          "hash": "16547388154327663073"
+          "hash": "779632818051865970"
         },
         {
           "file": "apps/booking-service/src/ws/redis-subscriber.ts",
@@ -368,7 +368,7 @@
         },
         {
           "file": "apps/booking-worker/src/worker.ts",
-          "hash": "17585220812216217632"
+          "hash": "701529655867103732"
         },
         {
           "file": "apps/booking-worker/tsconfig.build.json",

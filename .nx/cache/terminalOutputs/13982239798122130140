@@ -1,0 +1,209 @@
+[2m> [22mpnpm -C apps/booking-service dev
+
+
+> booking-service@0.1.0 dev /Users/praiseleye/Documents/Geny-Test/apps/booking-service
+> ts-node-dev --respawn --transpile-only src/main.ts
+
+[[36mINFO[0m] [30;1m08:46:02[0m ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.9.2)
+[32m[Nest] 3063  - [39m08/17/2025, 8:46:03 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 3063  - [39m08/17/2025, 8:46:03 AM [32m    LOG[39m [38;5;3m[InjectorLogger] [39m[32mNest encountered an undefined dependency. This may be due to a circular import or a missing dependency declaration.[39m
+[31m[Nest] 3063  - [39m08/17/2025, 8:46:03 AM [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mNest can't resolve dependencies of the BookingsService (?). Please make sure that the argument dependency at index [0] is available in the BookingsModule context.
+
+Potential solutions:
+- Is BookingsModule a valid NestJS module?
+- If dependency is a provider, is it part of the current BookingsModule?
+- If dependency is exported from a separate @Module, is that module imported within BookingsModule?
+  @Module({
+    imports: [ /* the Module containing dependency */ ]
+  })
+[39m
+Error: Nest can't resolve dependencies of the BookingsService (?). Please make sure that the argument dependency at index [0] is available in the BookingsModule context.
+
+Potential solutions:
+- Is BookingsModule a valid NestJS module?
+- If dependency is a provider, is it part of the current BookingsModule?
+- If dependency is exported from a separate @Module, is that module imported within BookingsModule?
+  @Module({
+    imports: [ /* the Module containing dependency */ ]
+  })
+
+    at Injector.resolveSingleParam (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js:199:19)
+    at resolveParam (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js:129:49)
+    at Array.map (<anonymous>)
+    at Injector.resolveConstructorParams (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js:144:58)
+    at Injector.loadInstance (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js:70:24)
+    at Injector.loadProvider (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js:98:20)
+    at /Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js:56:33
+    at Array.map (<anonymous>)
+    at InstanceLoader.createInstancesOfProviders (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js:55:36)
+    at /Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js:40:24
+[[36mINFO[0m] [30;1m08:49:52[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-service/src/bookings/bookings.module.ts has been modified
+[32m[Nest] 3998  - [39m08/17/2025, 8:49:53 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 3998  - [39m08/17/2025, 8:49:53 AM [32m    LOG[39m [38;5;3m[InjectorLogger] [39m[32mNest encountered an undefined dependency. This may be due to a circular import or a missing dependency declaration.[39m
+[31m[Nest] 3998  - [39m08/17/2025, 8:49:53 AM [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mNest can't resolve dependencies of the BookingsService (?). Please make sure that the argument dependency at index [0] is available in the BookingsModule context.
+
+Potential solutions:
+- Is BookingsModule a valid NestJS module?
+- If dependency is a provider, is it part of the current BookingsModule?
+- If dependency is exported from a separate @Module, is that module imported within BookingsModule?
+  @Module({
+    imports: [ /* the Module containing dependency */ ]
+  })
+[39m
+Error: Nest can't resolve dependencies of the BookingsService (?). Please make sure that the argument dependency at index [0] is available in the BookingsModule context.
+
+Potential solutions:
+- Is BookingsModule a valid NestJS module?
+- If dependency is a provider, is it part of the current BookingsModule?
+- If dependency is exported from a separate @Module, is that module imported within BookingsModule?
+  @Module({
+    imports: [ /* the Module containing dependency */ ]
+  })
+
+    at Injector.resolveSingleParam (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js:199:19)
+    at resolveParam (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js:129:49)
+    at Array.map (<anonymous>)
+    at Injector.resolveConstructorParams (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js:144:58)
+    at Injector.loadInstance (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js:70:24)
+    at Injector.loadProvider (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js:98:20)
+    at /Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js:56:33
+    at Array.map (<anonymous>)
+    at InstanceLoader.createInstancesOfProviders (/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js:55:36)
+    at /Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js:40:24
+[[36mINFO[0m] [30;1m08:50:15[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-service/src/bookings/bookings.service.ts has been modified
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBookingsModule dependencies initialized[39m[38;5;3m +0ms[39m
+WebSocket gateway initialized
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/health}:[39m[38;5;3m +13ms[39m
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health/ready, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBookingsController {/bookings}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/upcoming/list, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/past/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4084  - [39m08/17/2025, 8:50:16 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +15ms[39m
+Booking service listening on http://localhost:3000
+[[36mINFO[0m] [30;1m08:50:27[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-service/src/bookings/bookings.module.ts has been modified
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +10ms[39m
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBookingsModule dependencies initialized[39m[38;5;3m +0ms[39m
+WebSocket gateway initialized
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/health}:[39m[38;5;3m +12ms[39m
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health/ready, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBookingsController {/bookings}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/upcoming/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/past/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4135  - [39m08/17/2025, 8:50:28 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +9ms[39m
+Booking service listening on http://localhost:3000
+[[36mINFO[0m] [30;1m08:50:29[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-service/src/bookings/bookings.service.ts has been modified
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +10ms[39m
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBookingsModule dependencies initialized[39m[38;5;3m +0ms[39m
+WebSocket gateway initialized
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/health}:[39m[38;5;3m +10ms[39m
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health/ready, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBookingsController {/bookings}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/upcoming/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/past/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4157  - [39m08/17/2025, 8:50:29 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +8ms[39m
+Booking service listening on http://localhost:3000
+[[36mINFO[0m] [30;1m08:50:34[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-service/src/bookings/drizzle.repository.ts has been modified
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +11ms[39m
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBookingsModule dependencies initialized[39m[38;5;3m +0ms[39m
+WebSocket gateway initialized
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/health}:[39m[38;5;3m +10ms[39m
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health/ready, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBookingsController {/bookings}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/upcoming/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/past/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4183  - [39m08/17/2025, 8:50:35 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +11ms[39m
+Booking service listening on http://localhost:3000
+[[36mINFO[0m] [30;1m08:50:38[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-service/src/bookings/drizzle.repository.ts has been modified
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +12ms[39m
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBookingsModule dependencies initialized[39m[38;5;3m +0ms[39m
+WebSocket gateway initialized
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/health}:[39m[38;5;3m +9ms[39m
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health/ready, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBookingsController {/bookings}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/upcoming/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/past/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4215  - [39m08/17/2025, 8:50:39 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +9ms[39m
+Booking service listening on http://localhost:3000
+[[36mINFO[0m] [30;1m08:50:41[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-service/src/bookings/tokens.ts has been modified
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +12ms[39m
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBookingsModule dependencies initialized[39m[38;5;3m +0ms[39m
+WebSocket gateway initialized
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/health}:[39m[38;5;3m +10ms[39m
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health/ready, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBookingsController {/bookings}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/upcoming/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/past/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4225  - [39m08/17/2025, 8:50:41 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +7ms[39m
+Booking service listening on http://localhost:3000
+[[36mINFO[0m] [30;1m09:12:04[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-service/src/main.ts has been modified
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +12ms[39m
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBookingsModule dependencies initialized[39m[38;5;3m +0ms[39m
+WebSocket gateway initialized
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/health}:[39m[38;5;3m +10ms[39m
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health/ready, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBookingsController {/bookings}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/upcoming/list, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/past/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9376  - [39m08/17/2025, 9:12:05 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +10ms[39m
+Booking service listening on http://localhost:3000
+[[36mINFO[0m] [30;1m09:13:02[0m Restarting: /Users/praiseleye/Documents/Geny-Test/apps/booking-service/src/main.ts has been modified
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +13ms[39m
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBookingsModule dependencies initialized[39m[38;5;3m +1ms[39m
+WebSocket gateway initialized
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/health}:[39m[38;5;3m +11ms[39m
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health/ready, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBookingsController {/bookings}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/upcoming/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/bookings/past/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9593  - [39m08/17/2025, 9:13:03 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +8ms[39m
+Booking service listening on http://localhost:3000
+^C

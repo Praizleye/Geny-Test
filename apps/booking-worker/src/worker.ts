@@ -1,9 +1,10 @@
+import 'dotenv/config';
 import 'reflect-metadata';
 import { Worker } from 'bullmq';
 import IORedis from 'ioredis';
 import { config } from './config';
 
-const connection = new IORedis(config.redisUrl);
+const connection = new IORedis(config.redisUrl, { maxRetriesPerRequest: null, enableReadyCheck: false });
 
 const worker = new Worker('booking-reminders', async (job: any) => {
   const { bookingId, startTime } = job.data as { bookingId: string; startTime: string | Date };
