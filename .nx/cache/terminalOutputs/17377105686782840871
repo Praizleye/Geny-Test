@@ -1,0 +1,6 @@
+[2m> [22mpnpm -C apps/booking-worker build
+
+
+> booking-worker@0.1.0 build /Users/praiseleye/Documents/Geny-Test/apps/booking-worker
+> tsc -p tsconfig.build.json
+

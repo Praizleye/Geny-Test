@@ -1,0 +1,32 @@
+{
+  "run": {
+    "command": "nx run-many -t test",
+    "startTime": "2025-08-16T17:33:41.392Z",
+    "endTime": "2025-08-16T17:33:44.497Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "booking-worker:test",
+      "target": "test",
+      "projectName": "booking-worker",
+      "hash": "14581511894185906072",
+      "startTime": "2025-08-16T17:33:41.469Z",
+      "endTime": "2025-08-16T17:33:41.474Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "booking-service:test",
+      "target": "test",
+      "projectName": "booking-service",
+      "hash": "18304103856759277267",
+      "startTime": "2025-08-16T17:33:41.469Z",
+      "endTime": "2025-08-16T17:33:44.495Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

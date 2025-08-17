@@ -1,0 +1,11 @@
+{
+  "name": "booking-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/worker.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/src/worker.js"
+  }
+}

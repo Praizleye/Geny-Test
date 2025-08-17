@@ -1,0 +1,15 @@
+[2m> [22mpnpm -C apps/booking-service build
+
+
+> booking-service@0.1.0 build /Users/praiseleye/Documents/Geny-Test/apps/booking-service
+> tsc -p tsconfig.build.json
+
+src/auth/jwt.strategy.ts(3,38): error TS7016: Could not find a declaration file for module 'passport-jwt'. '/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/passport-jwt@4.0.1/node_modules/passport-jwt/lib/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/passport-jwt` if it exists or add a new declaration (.d.ts) file containing `declare module 'passport-jwt';`
+src/bookings/bookings.service.spec.ts(1,37): error TS2307: Cannot find module '@nestjs/testing' or its corresponding type declarations.
+src/bookings/drizzle.repository.ts(48,7): error TS2554: Expected 1 arguments, but got 2.
+src/bookings/drizzle.repository.ts(62,7): error TS2554: Expected 1 arguments, but got 2.
+src/db/client.ts(1,22): error TS7016: Could not find a declaration file for module 'pg'. '/Users/praiseleye/Documents/Geny-Test/node_modules/.pnpm/pg@8.16.3/node_modules/pg/lib/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/pg` if it exists or add a new declaration (.d.ts) file containing `declare module 'pg';`
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 2.[39m
+[43m[30m WARN [39m[49m  Local package.json exists, but node_modules missing, did you mean to install?

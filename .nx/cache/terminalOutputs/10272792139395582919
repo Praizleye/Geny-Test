@@ -1,0 +1,15 @@
+[2m> [22mpnpm -C apps/booking-service test
+
+
+> booking-service@0.1.0 test /Users/praiseleye/Documents/Geny-Test/apps/booking-service
+> jest --config ../../jest.config.js --roots ./src --runInBand
+
+[31m[31m[1m[1m● [22m[1mValidation Error[22m:[39m[31m[39m
+[31m[31m[39m[31m[39m
+[31m[31m  Directory [1m/Users/praiseleye/Documents/Geny-Test/src[22m in the [1mroots[0][22m option was not found.[39m[31m[39m
+[31m[31m[39m[31m[39m
+[31m[31m  [1mConfiguration Documentation:[22m[39m[31m[39m
+[31m[31m  https://jestjs.io/docs/configuration[39m[31m[39m
+[31m[31m[39m[31m[39m
+[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m
+[43m[30m WARN [39m[49m  Local package.json exists, but node_modules missing, did you mean to install?

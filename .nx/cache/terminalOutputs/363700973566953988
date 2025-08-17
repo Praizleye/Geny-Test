@@ -1,0 +1,78 @@
+[2m> [22mpnpm -C apps/booking-service test
+
+
+> booking-service@0.1.0 test /Users/praiseleye/Documents/Geny-Test/apps/booking-service
+> jest --config ../../jest.config.js --roots apps/booking-service/src --runInBand
+
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2msrc/bookings/[22m[1mbookings.service.spec.ts[22m
+  BookingsService
+    [31m✕[39m [2mthrows if endTime before startTime (7 ms)[22m
+    [31m✕[39m [2mcreates and enqueues reminder (2 ms)[22m
+
+[1m[31m  [1m● [22m[1mBookingsService › throws if endTime before startTime[39m[22m
+
+    TypeError: ioredis_1.Redis is not a constructor
+[2m[22m
+[2m    [0m [90m  9 |[39m [33m@[39m[33mInjectable[39m()[22m
+[2m     [90m 10 |[39m [36mexport[39m [36mclass[39m [33mBookingsService[39m {[22m
+[2m    [31m[1m>[22m[2m[39m[90m 11 |[39m   [36mprivate[39m pub [33m=[39m [36mnew[39m [33mRedis[39m(config[33m.[39mredisUrl)[33m;[39m[22m
+[2m     [90m    |[39m                 [31m[1m^[22m[2m[39m[22m
+[2m     [90m 12 |[39m[22m
+[2m     [90m 13 |[39m   constructor([33m@[39m[33mInject[39m([33mBOOKINGS_REPO[39m) [36mprivate[39m readonly repo[33m:[39m [33mIBookingsRepository[39m) {}[22m
+[2m     [90m 14 |[39m[0m[22m
+[2m[22m
+[2m      [2mat new BookingsService ([22m[2mapps/booking-service/src/bookings/bookings.service.ts[2m:11:17)[22m[2m[22m
+[2m      [2mat TestingInjector.instantiateClass ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js[2m:373:19)[22m[2m[22m
+[2m      [2mat callback ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js[2m:65:45)[22m[2m[22m
+[2m      [2mat TestingInjector.resolveConstructorParams ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js[2m:145:24)[22m[2m[22m
+[2m      [2mat TestingInjector.loadInstance ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js[2m:70:13)[22m[2m[22m
+[2m      [2mat TestingInjector.loadProvider ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js[2m:98:9)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js[2m:56:13[22m[2m[22m
+[2m          at async Promise.all (index 3)[22m
+[2m      [2mat TestingInstanceLoader.createInstancesOfProviders ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js[2m:55:9)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js[2m:40:13[22m[2m[22m
+[2m          at async Promise.all (index 1)[22m
+[2m      [2mat TestingInstanceLoader.createInstances ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js[2m:39:9)[22m[2m[22m
+[2m      [2mat TestingInstanceLoader.createInstancesOfDependencies ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js[2m:22:13)[22m[2m[22m
+[2m      [2mat TestingInstanceLoader.createInstancesOfDependencies ([22m[2mnode_modules/.pnpm/@nestjs+testing@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_rkjadnbnqwzka64cimwtygnkgi/node_modules/@nestjs/testing/testing-instance-loader.js[2m:9:9)[22m[2m[22m
+[2m      [2mat TestingModuleBuilder.createInstancesOfDependencies ([22m[2mnode_modules/.pnpm/@nestjs+testing@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_rkjadnbnqwzka64cimwtygnkgi/node_modules/@nestjs/testing/testing-module.builder.js[2m:118:9)[22m[2m[22m
+[2m      [2mat TestingModuleBuilder.compile ([22m[2mnode_modules/.pnpm/@nestjs+testing@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_rkjadnbnqwzka64cimwtygnkgi/node_modules/@nestjs/testing/testing-module.builder.js[2m:74:9)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36mapps/booking-service/src/bookings/bookings.service.spec.ts[39m[0m[2m:27:35)[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mBookingsService › creates and enqueues reminder[39m[22m
+
+    TypeError: ioredis_1.Redis is not a constructor
+[2m[22m
+[2m    [0m [90m  9 |[39m [33m@[39m[33mInjectable[39m()[22m
+[2m     [90m 10 |[39m [36mexport[39m [36mclass[39m [33mBookingsService[39m {[22m
+[2m    [31m[1m>[22m[2m[39m[90m 11 |[39m   [36mprivate[39m pub [33m=[39m [36mnew[39m [33mRedis[39m(config[33m.[39mredisUrl)[33m;[39m[22m
+[2m     [90m    |[39m                 [31m[1m^[22m[2m[39m[22m
+[2m     [90m 12 |[39m[22m
+[2m     [90m 13 |[39m   constructor([33m@[39m[33mInject[39m([33mBOOKINGS_REPO[39m) [36mprivate[39m readonly repo[33m:[39m [33mIBookingsRepository[39m) {}[22m
+[2m     [90m 14 |[39m[0m[22m
+[2m[22m
+[2m      [2mat new BookingsService ([22m[2mapps/booking-service/src/bookings/bookings.service.ts[2m:11:17)[22m[2m[22m
+[2m      [2mat TestingInjector.instantiateClass ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js[2m:373:19)[22m[2m[22m
+[2m      [2mat callback ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js[2m:65:45)[22m[2m[22m
+[2m      [2mat TestingInjector.resolveConstructorParams ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js[2m:145:24)[22m[2m[22m
+[2m      [2mat TestingInjector.loadInstance ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js[2m:70:13)[22m[2m[22m
+[2m      [2mat TestingInjector.loadProvider ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/injector.js[2m:98:9)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js[2m:56:13[22m[2m[22m
+[2m          at async Promise.all (index 3)[22m
+[2m      [2mat TestingInstanceLoader.createInstancesOfProviders ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js[2m:55:9)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js[2m:40:13[22m[2m[22m
+[2m          at async Promise.all (index 1)[22m
+[2m      [2mat TestingInstanceLoader.createInstances ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js[2m:39:9)[22m[2m[22m
+[2m      [2mat TestingInstanceLoader.createInstancesOfDependencies ([22m[2mnode_modules/.pnpm/@nestjs+core@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_re_gdpssuai5slqtllmuhnltv5yme/node_modules/@nestjs/core/injector/instance-loader.js[2m:22:13)[22m[2m[22m
+[2m      [2mat TestingInstanceLoader.createInstancesOfDependencies ([22m[2mnode_modules/.pnpm/@nestjs+testing@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_rkjadnbnqwzka64cimwtygnkgi/node_modules/@nestjs/testing/testing-instance-loader.js[2m:9:9)[22m[2m[22m
+[2m      [2mat TestingModuleBuilder.createInstancesOfDependencies ([22m[2mnode_modules/.pnpm/@nestjs+testing@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_rkjadnbnqwzka64cimwtygnkgi/node_modules/@nestjs/testing/testing-module.builder.js[2m:118:9)[22m[2m[22m
+[2m      [2mat TestingModuleBuilder.compile ([22m[2mnode_modules/.pnpm/@nestjs+testing@10.4.20_@nestjs+common@10.4.20_class-transformer@0.5.1_class-validator@0.14.2_rkjadnbnqwzka64cimwtygnkgi/node_modules/@nestjs/testing/testing-module.builder.js[2m:74:9)[22m[2m[22m
+[2m      [2mat Object.<anonymous> ([22m[2m[0m[36mapps/booking-service/src/bookings/bookings.service.spec.ts[39m[0m[2m:27:35)[22m[2m[22m
+
+[1mTest Suites: [22m[1m[31m1 failed[39m[22m, 1 total
+[1mTests:       [22m[1m[31m2 failed[39m[22m, 2 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2.31 s
+[2mRan all test suites[22m[2m.[22m
+[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m
+[43m[30m WARN [39m[49m  Local package.json exists, but node_modules missing, did you mean to install?

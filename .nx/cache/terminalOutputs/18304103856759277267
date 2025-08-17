@@ -1,0 +1,16 @@
+[2m> [22mpnpm -C apps/booking-service test
+
+
+> booking-service@0.1.0 test /Users/praiseleye/Documents/Geny-Test/apps/booking-service
+> jest --config ../../jest.config.js --roots apps/booking-service/src --runInBand
+
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [2msrc/bookings/[22m[1mbookings.service.spec.ts[22m
+  BookingsService
+    [32m✓[39m [2mthrows if endTime before startTime (7 ms)[22m
+    [32m✓[39m [2mcreates and enqueues reminder (2 ms)[22m
+
+[1mTest Suites: [22m[1m[32m1 passed[39m[22m, 1 total
+[1mTests:       [22m[1m[32m2 passed[39m[22m, 2 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        2.272 s, estimated 3 s
+[2mRan all test suites[22m[2m.[22m

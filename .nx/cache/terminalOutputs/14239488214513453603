@@ -1,0 +1,21 @@
+[2m> [22mpnpm -C apps/booking-service test
+
+
+> booking-service@0.1.0 test /Users/praiseleye/Documents/Geny-Test/apps/booking-service
+> jest --config ../../jest.config.js --roots apps/booking-service/src --runInBand
+
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2msrc/bookings/[22m[1mbookings.service.spec.ts[22m
+  [1m● [22mTest suite failed to run
+
+    [96msrc/bookings/bookings.service.spec.ts[0m:[93m1[0m:[93m37[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/testing' or its corresponding type declarations.
+
+    [7m1[0m import { Test, TestingModule } from '@nestjs/testing';
+    [7m [0m [91m                                    ~~~~~~~~~~~~~~~~~[0m
+
+[1mTest Suites: [22m[1m[31m1 failed[39m[22m, 1 total
+[1mTests:       [22m0 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        1.588 s
+[2mRan all test suites[22m[2m.[22m
+[41m[30m ELIFECYCLE [39m[49m [31mTest failed. See above for more details.[39m
+[43m[30m WARN [39m[49m  Local package.json exists, but node_modules missing, did you mean to install?

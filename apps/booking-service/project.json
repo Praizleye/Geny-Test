@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/nx-project.json",
+  "name": "booking-service",
+  "sourceRoot": "apps/booking-service/src",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm -C apps/booking-service dev"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm -C apps/booking-service build"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "pnpm -C apps/booking-service test"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "echo 'lint skipped'"
+      }
+    }
+  },
+  "tags": ["type:service"]
+}

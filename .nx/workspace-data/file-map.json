@@ -1,0 +1,368 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.2",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "3102350400356622808"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "14957344469935029303"
+      },
+      {
+        "file": "README.md",
+        "hash": "16478322637662302619"
+      },
+      {
+        "file": "drizzle.config.ts",
+        "hash": "6430357728190372608"
+      },
+      {
+        "file": "jest.config.js",
+        "hash": "11568839709720087796"
+      },
+      {
+        "file": "nx.json",
+        "hash": "4672912533429441251"
+      },
+      {
+        "file": "package.json",
+        "hash": "5533853033238489328"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "17751176298836034051"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "2811845925925127796"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "10028590073176968744"
+      }
+    ],
+    "projectFileMap": {
+      "booking-service": [
+        {
+          "file": "apps/booking-service/dist/src/app.module.js",
+          "hash": "13664835250758737682"
+        },
+        {
+          "file": "apps/booking-service/dist/src/app.module.js.map",
+          "hash": "3840618034589564637"
+        },
+        {
+          "file": "apps/booking-service/dist/src/auth/auth.module.js",
+          "hash": "13844195073610407946"
+        },
+        {
+          "file": "apps/booking-service/dist/src/auth/auth.module.js.map",
+          "hash": "14535686095523319932"
+        },
+        {
+          "file": "apps/booking-service/dist/src/auth/jwt.strategy.js",
+          "hash": "17547549541550981485"
+        },
+        {
+          "file": "apps/booking-service/dist/src/auth/jwt.strategy.js.map",
+          "hash": "1155198077587852756"
+        },
+        {
+          "file": "apps/booking-service/dist/src/auth/roles.decorator.js",
+          "hash": "3749708892663664528"
+        },
+        {
+          "file": "apps/booking-service/dist/src/auth/roles.decorator.js.map",
+          "hash": "4912450890824655743"
+        },
+        {
+          "file": "apps/booking-service/dist/src/auth/roles.guard.js",
+          "hash": "4819190566394661499"
+        },
+        {
+          "file": "apps/booking-service/dist/src/auth/roles.guard.js.map",
+          "hash": "17158878652550113238"
+        },
+        {
+          "file": "apps/booking-service/dist/src/bookings/bookings.controller.js",
+          "hash": "15498977848496681724"
+        },
+        {
+          "file": "apps/booking-service/dist/src/bookings/bookings.controller.js.map",
+          "hash": "3511233095547981170"
+        },
+        {
+          "file": "apps/booking-service/dist/src/bookings/bookings.module.js",
+          "hash": "4556678161759638296"
+        },
+        {
+          "file": "apps/booking-service/dist/src/bookings/bookings.module.js.map",
+          "hash": "364656095604790727"
+        },
+        {
+          "file": "apps/booking-service/dist/src/bookings/bookings.service.js",
+          "hash": "7127646674112991737"
+        },
+        {
+          "file": "apps/booking-service/dist/src/bookings/bookings.service.js.map",
+          "hash": "8155525761370961492"
+        },
+        {
+          "file": "apps/booking-service/dist/src/bookings/bookings.service.spec.js",
+          "hash": "12290756672502642957"
+        },
+        {
+          "file": "apps/booking-service/dist/src/bookings/bookings.service.spec.js.map",
+          "hash": "12640313448629891799"
+        },
+        {
+          "file": "apps/booking-service/dist/src/bookings/drizzle.repository.js",
+          "hash": "15393907433698544085"
+        },
+        {
+          "file": "apps/booking-service/dist/src/bookings/drizzle.repository.js.map",
+          "hash": "468304777454442020"
+        },
+        {
+          "file": "apps/booking-service/dist/src/bookings/dto.js",
+          "hash": "10859271381740925913"
+        },
+        {
+          "file": "apps/booking-service/dist/src/bookings/dto.js.map",
+          "hash": "2958935098352512167"
+        },
+        {
+          "file": "apps/booking-service/dist/src/config.js",
+          "hash": "13295302457189160368"
+        },
+        {
+          "file": "apps/booking-service/dist/src/config.js.map",
+          "hash": "13164651172444919763"
+        },
+        {
+          "file": "apps/booking-service/dist/src/db/client.js",
+          "hash": "10982224316897653862"
+        },
+        {
+          "file": "apps/booking-service/dist/src/db/client.js.map",
+          "hash": "18151536397724796503"
+        },
+        {
+          "file": "apps/booking-service/dist/src/db/migrate.js",
+          "hash": "2159142251267746682"
+        },
+        {
+          "file": "apps/booking-service/dist/src/db/migrate.js.map",
+          "hash": "2591919163659190138"
+        },
+        {
+          "file": "apps/booking-service/dist/src/db/schema.js",
+          "hash": "15263094410037501658"
+        },
+        {
+          "file": "apps/booking-service/dist/src/db/schema.js.map",
+          "hash": "4859610198481984919"
+        },
+        {
+          "file": "apps/booking-service/dist/src/health/health.controller.js",
+          "hash": "18259862547556725981"
+        },
+        {
+          "file": "apps/booking-service/dist/src/health/health.controller.js.map",
+          "hash": "12513614477735732982"
+        },
+        {
+          "file": "apps/booking-service/dist/src/main.js",
+          "hash": "1317649321284430032"
+        },
+        {
+          "file": "apps/booking-service/dist/src/main.js.map",
+          "hash": "15685950679668053918"
+        },
+        {
+          "file": "apps/booking-service/dist/src/metrics/register.js",
+          "hash": "12767213593951484213"
+        },
+        {
+          "file": "apps/booking-service/dist/src/metrics/register.js.map",
+          "hash": "411677070313175906"
+        },
+        {
+          "file": "apps/booking-service/dist/src/queue/job-queue.js",
+          "hash": "2119267470164949531"
+        },
+        {
+          "file": "apps/booking-service/dist/src/queue/job-queue.js.map",
+          "hash": "8461550280160364696"
+        },
+        {
+          "file": "apps/booking-service/dist/src/ws/redis-subscriber.js",
+          "hash": "4807137278413313461"
+        },
+        {
+          "file": "apps/booking-service/dist/src/ws/redis-subscriber.js.map",
+          "hash": "16916491925490076497"
+        },
+        {
+          "file": "apps/booking-service/dist/src/ws/ws.gateway.js",
+          "hash": "11344855249280049899"
+        },
+        {
+          "file": "apps/booking-service/dist/src/ws/ws.gateway.js.map",
+          "hash": "13212557763745835196"
+        },
+        {
+          "file": "apps/booking-service/migrations/0001_init.sql",
+          "hash": "16805898438218141204"
+        },
+        {
+          "file": "apps/booking-service/package.json",
+          "hash": "9609147213103021742"
+        },
+        {
+          "file": "apps/booking-service/project.json",
+          "hash": "9790881295119928006"
+        },
+        {
+          "file": "apps/booking-service/src/app.module.ts",
+          "hash": "11530574603120679015"
+        },
+        {
+          "file": "apps/booking-service/src/auth/auth.module.ts",
+          "hash": "16517102465567070026"
+        },
+        {
+          "file": "apps/booking-service/src/auth/jwt.strategy.ts",
+          "hash": "9918028198844659777"
+        },
+        {
+          "file": "apps/booking-service/src/auth/roles.decorator.ts",
+          "hash": "37571003900902016"
+        },
+        {
+          "file": "apps/booking-service/src/auth/roles.guard.ts",
+          "hash": "5989782476110246805"
+        },
+        {
+          "file": "apps/booking-service/src/bookings/bookings.controller.ts",
+          "hash": "16199195988821924174"
+        },
+        {
+          "file": "apps/booking-service/src/bookings/bookings.module.ts",
+          "hash": "16494392525895576520"
+        },
+        {
+          "file": "apps/booking-service/src/bookings/bookings.service.spec.ts",
+          "hash": "8586200635509908505"
+        },
+        {
+          "file": "apps/booking-service/src/bookings/bookings.service.ts",
+          "hash": "16767356975819732726"
+        },
+        {
+          "file": "apps/booking-service/src/bookings/drizzle.repository.ts",
+          "hash": "2763212637189852833"
+        },
+        {
+          "file": "apps/booking-service/src/bookings/dto.ts",
+          "hash": "3635510918500259182"
+        },
+        {
+          "file": "apps/booking-service/src/config.ts",
+          "hash": "14202822955566217853"
+        },
+        {
+          "file": "apps/booking-service/src/db/client.ts",
+          "hash": "18338829045792459916"
+        },
+        {
+          "file": "apps/booking-service/src/db/migrate.ts",
+          "hash": "11792827240532349945"
+        },
+        {
+          "file": "apps/booking-service/src/db/schema.ts",
+          "hash": "15781124739271061751"
+        },
+        {
+          "file": "apps/booking-service/src/health/health.controller.ts",
+          "hash": "14496257500800260908"
+        },
+        {
+          "file": "apps/booking-service/src/main.ts",
+          "hash": "7938526643354554153"
+        },
+        {
+          "file": "apps/booking-service/src/metrics/register.ts",
+          "hash": "1286134277212910293"
+        },
+        {
+          "file": "apps/booking-service/src/queue/job-queue.ts",
+          "hash": "16547388154327663073"
+        },
+        {
+          "file": "apps/booking-service/src/ws/redis-subscriber.ts",
+          "hash": "7287146589350752306"
+        },
+        {
+          "file": "apps/booking-service/src/ws/ws.gateway.ts",
+          "hash": "13356263437440097352"
+        },
+        {
+          "file": "apps/booking-service/tsconfig.build.json",
+          "hash": "15128627772119147723"
+        },
+        {
+          "file": "apps/booking-service/tsconfig.json",
+          "hash": "3584111246389606518"
+        }
+      ],
+      "booking-worker": [
+        {
+          "file": "apps/booking-worker/dist/src/config.js",
+          "hash": "40863622579083179"
+        },
+        {
+          "file": "apps/booking-worker/dist/src/config.js.map",
+          "hash": "15886151823683951835"
+        },
+        {
+          "file": "apps/booking-worker/dist/src/worker.js",
+          "hash": "6291145294483911119"
+        },
+        {
+          "file": "apps/booking-worker/dist/src/worker.js.map",
+          "hash": "2785368998562052145"
+        },
+        {
+          "file": "apps/booking-worker/package.json",
+          "hash": "13842112217211425918"
+        },
+        {
+          "file": "apps/booking-worker/project.json",
+          "hash": "1939238145207996830"
+        },
+        {
+          "file": "apps/booking-worker/src/config.ts",
+          "hash": "135643471310915048"
+        },
+        {
+          "file": "apps/booking-worker/src/worker.ts",
+          "hash": "17585220812216217632"
+        },
+        {
+          "file": "apps/booking-worker/tsconfig.build.json",
+          "hash": "4435453427051663338"
+        },
+        {
+          "file": "apps/booking-worker/tsconfig.json",
+          "hash": "15389935362767717706"
+        }
+      ]
+    }
+  }
+}

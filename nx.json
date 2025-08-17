@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/nx.json",
+  "npmScope": "geny",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test"],
+        "parallel": 3
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    }
+  },
+  "generators": {},
+  "defaultProject": "booking-service",
+  "projects": {
+    "booking-service": {
+      "tags": ["type:service"],
+      "implicitDependencies": []
+    },
+    "booking-worker": {
+      "tags": ["type:worker"],
+      "implicitDependencies": ["booking-service"]
+    }
+  }
+}
