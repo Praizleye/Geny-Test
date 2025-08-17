@@ -12,12 +12,36 @@ export class RolesGuard implements CanActivate {
       context.getHandler(),
       context.getClass(),
     ]);
-    if (!required || required.length === 0) return true;
+    if (!required || required.length === 0) {
+      // eslint-disable-next-line no-console
+      console.log('[RolesGuard] No roles required for this route');
+      return true;
+    }
 
     const req = context.switchToHttp().getRequest();
-    const user = req.user as { roles?: Role[] } | undefined;
-    if (!user?.roles) return false;
-    return required.some((r) => user.roles!.includes(r));
+    const user = req.user as { sub?: string; roles?: Role[] } | undefined;
+
+    if (!user) {
+      // eslint-disable-next-line no-console
+      console.warn('[RolesGuard] Missing req.user. JWT might be invalid or not provided');
+      return false;
+    }
+
+    if (!user.roles || user.roles.length === 0) {
+      // eslint-disable-next-line no-console
+      console.warn('[RolesGuard] User has no roles', { sub: user.sub });
+      return false;
+    }
+
+    const allow = required.some((r) => user.roles!.includes(r));
+    // eslint-disable-next-line no-console
+    console.log('[RolesGuard] Decision', {
+      sub: user.sub,
+      userRoles: user.roles,
+      requiredRoles: required,
+      allow,
+    });
+    return allow;
   }
 }
 

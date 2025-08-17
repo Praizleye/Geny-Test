@@ -2,16 +2,17 @@ import { Body, Controller, Get, Param, Post, Query, Req, UseGuards } from '@nest
 import { BookingsService } from './bookings.service';
 import { CreateBookingDto, ListQueryDto } from './dto';
 import { Roles } from '../auth/roles.decorator';
-import { JwtAuthGuard } from '../auth/roles.guard';
+import { JwtAuthGuard, RolesGuard } from '../auth/roles.guard';
 
 @Controller('bookings')
-@UseGuards(JwtAuthGuard)
+@UseGuards(JwtAuthGuard, RolesGuard)
 export class BookingsController {
   constructor(private readonly service: BookingsService) {}
 
   @Post()
   @Roles('provider', 'admin')
   async create(@Body() body: CreateBookingDto, @Req() req: any) {
+    console.log("🚀 ~ BookingsController ~ create ~ body:", body)
     const user = req.user as { sub: string; roles: string[] };
     const providerId = user.roles.includes('provider') && !user.roles.includes('admin')
       ? user.sub

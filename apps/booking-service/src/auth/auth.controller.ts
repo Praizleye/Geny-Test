@@ -26,7 +26,7 @@ export class AuthController {
     return {
       access_token: token,
       token_type: 'Bearer',
-      expires_in: 3600,
+      expires_in: 3600, // 1 hourå
       payload,
     };
   }
