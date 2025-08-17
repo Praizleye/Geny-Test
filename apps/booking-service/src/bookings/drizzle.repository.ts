@@ -1,9 +1,7 @@
-import { Injectable, NotFoundException, ForbiddenException } from '@nestjs/common';
-import { Inject } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { bookings, Booking } from '../db/schema';
 import { db } from '../db/client';
 import { and, desc, eq, gt, lt, count } from 'drizzle-orm';
-import { BOOKINGS_REPO } from './bookings.module';
 
 export type CreateBookingInput = {
   providerId: string;

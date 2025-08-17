@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException, ForbiddenException } from '@nestjs/common';
 import { Inject } from '@nestjs/common';
-import { BOOKINGS_REPO } from './bookings.module';
+import { BOOKINGS_REPO } from './tokens';
 import { IBookingsRepository, CreateBookingInput } from './drizzle.repository';
 import Redis from 'ioredis';
 import { config } from '../config';

@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { BookingsService } from './bookings.service';
-import { BOOKINGS_REPO } from './bookings.module';
+import { BOOKINGS_REPO } from './tokens';
 import { IBookingsRepository } from './drizzle.repository';
 import { ForbiddenException } from '@nestjs/common';
 

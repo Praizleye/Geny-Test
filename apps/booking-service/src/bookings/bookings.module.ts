@@ -5,8 +5,7 @@ import { AuthModule } from '../auth/auth.module';
 import { RolesGuard } from '../auth/roles.guard';
 import { APP_GUARD } from '@nestjs/core';
 import { DrizzleBookingsRepository } from './drizzle.repository';
-
-export const BOOKINGS_REPO = Symbol('BOOKINGS_REPO');
+import { BOOKINGS_REPO } from './tokens';
 
 @Module({
   imports: [AuthModule],
