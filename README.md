@@ -1,4 +1,5 @@
 # Geny-Test
+link- https://github.com/Praizleye/Geny-Test
 
 A minimal monorepo demonstrating a bookings platform with a NestJS HTTP/WebSocket service, a BullMQ worker, PostgreSQL (via Drizzle ORM), and Redis for pub/sub and job queueing. Managed with Nx workspaces.
 
